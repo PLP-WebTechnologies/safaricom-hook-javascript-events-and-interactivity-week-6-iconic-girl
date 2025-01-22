@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>choose a color</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1> Specialization</h1>
+
+    <button id="bgButton">Toggle</button>
+
+    <p id="resizableText">Welcome to our specialization program here you get an opportunity to specialize in a module of your choice <br>
+    Happy coding (:</p>
+    <input type="range" id="textSizeSlider" min="12" max="36" value="16">
+
+    <button id="modalButton">choose a Module</button>
+    <div id="myModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <p>
+                <li>back-end</li>
+                <li>flutter and dart</li>
+                <li> Ai</li>
+                <li>Front-end</li>
+            </p>
+        </div>
+    </div>
+
+    <h2>Form</h2>
+    <form id="myForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><span id="nameError" class="error"></span><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><span id="emailError" class="error"></span><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><span id="passwordError" class="error"></span><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <select id="mySelect">
+        <option value="option1">Module 1</option>
+        <option value="option2">Module 2</option>
+        <option value="option3">Module 3</option>
+        <option value="option4">Module 4</option>
+    </select>
+    <div id="selectMessage"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
